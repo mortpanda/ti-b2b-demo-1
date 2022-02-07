@@ -79,7 +79,7 @@ export class GetUserinfoService {
     this.AccountCreatedTime = this.datePipe.transform(this.UserCreatedDate, "HH:mm");
     this.PasswordLastChangedDate = this.datePipe.transform(this.UserPasswordLastChanged, "MMMM d, yyyy");
     
-    this.UserVerifiedEMail = this.strThisUserInfo.credentials.emails[0].status;
+    // this.UserVerifiedEMail = this.strThisUserInfo.credentials.emails[0].status;
     this.UserCredType = this.strThisUserInfo.credentials.provider.type;
     this.UserCredName = this.strThisUserInfo.credentials.provider.name;
     this.UserEmail = this.strThisUserInfo.profile.email;
